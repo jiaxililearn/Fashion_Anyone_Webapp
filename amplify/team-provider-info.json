@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "fashionanyonewebapp6cd3c26b": {}
+      },
+      "api": {
+        "fashionanyonewebapp": {}
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }
