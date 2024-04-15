@@ -1,4 +1,17 @@
 {
+  "ricca": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fashionanyonewebapp-ricca-76fce-authRole",
+      "UnauthRoleArn": "arn:aws:iam::545828245107:role/amplify-fashionanyonewebapp-ricca-76fce-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::545828245107:role/amplify-fashionanyonewebapp-ricca-76fce-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-fashionanyonewebapp-ricca-76fce-deployment",
+      "UnauthRoleName": "amplify-fashionanyonewebapp-ricca-76fce-unauthRole",
+      "StackName": "amplify-fashionanyonewebapp-ricca-76fce",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:545828245107:stack/amplify-fashionanyonewebapp-ricca-76fce/e65f02f0-fb17-11ee-bc1c-0656cee43b77",
+      "AmplifyAppId": "d2yqmti7g5r64y"
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-amplify35087cc4b0c84-staging-33429-authRole",
