@@ -8,8 +8,7 @@
 import * as React from "react";
 import { getOverrideProps, useNavigateAction } from "./utils";
 import LogoWithText from "./LogoWithText";
-import { Flex, Image, Text } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function NavBarHeader(props) {
   const { overrides, ...rest } = props;
   const dashboardOnClick = useNavigateAction({
@@ -25,8 +24,7 @@ export default function NavBarHeader(props) {
       justifyContent="center"
       alignItems="center"
       position="relative"
-      boxShadow="0px 2px 6px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.15000000596046448)"
-      padding="24px 32px 24px 32px"
+      padding="10px 32px 10px 32px"
       backgroundColor="rgba(255,255,255,1)"
       {...getOverrideProps(overrides, "NavBarHeader")}
       {...rest}
@@ -45,18 +43,16 @@ export default function NavBarHeader(props) {
         {...getOverrideProps(overrides, "LogoWithText")}
       ></LogoWithText>
       <Flex
-        gap="40px"
+        gap="100px"
         direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="flex-start"
+        width="133px"
+        height="38px"
+        justifyContent="space-between"
         alignItems="center"
-        grow="1"
-        shrink="1"
-        basis="0"
+        shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767076")}
+        {...getOverrideProps(overrides, "Frame 321")}
       >
         <Text
           fontFamily="Inter"
@@ -82,6 +78,19 @@ export default function NavBarHeader(props) {
           }}
           {...getOverrideProps(overrides, "Dashboard")}
         ></Text>
+      </Flex>
+      <Flex
+        gap="100px"
+        direction="row"
+        width="133px"
+        height="38px"
+        justifyContent="space-between"
+        alignItems="center"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Frame 322")}
+      >
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -100,94 +109,43 @@ export default function NavBarHeader(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Jobs"
-          {...getOverrideProps(overrides, "Jobs")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(92,102,112,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Applicants"
-          {...getOverrideProps(overrides, "Applicants")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(92,102,112,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Company"
-          {...getOverrideProps(overrides, "Company")}
+          children="Workouts"
+          {...getOverrideProps(overrides, "Workouts")}
         ></Text>
       </Flex>
       <Flex
-        gap="32px"
+        gap="100px"
         direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="flex-end"
+        width="133px"
+        height="38px"
+        justifyContent="space-between"
         alignItems="center"
-        grow="1"
-        shrink="1"
-        basis="0"
+        shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767081")}
+        {...getOverrideProps(overrides, "Frame 323")}
       >
-        <MyIcon
-          width="24px"
-          height="24px"
+        <Text
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="400"
+          color="rgba(92,102,112,1)"
+          lineHeight="24px"
+          textAlign="left"
           display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
           gap="unset"
           alignItems="unset"
-          justifyContent="unset"
-          overflow="hidden"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          type="notification"
-          {...getOverrideProps(overrides, "MyIcon")}
-        ></MyIcon>
-        <Image
-          width="45px"
-          height="45px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          shrink="0"
-          position="relative"
-          borderRadius="160px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
+          whiteSpace="pre-wrap"
+          children="Analytics"
+          {...getOverrideProps(overrides, "Analytics")}
+        ></Text>
       </Flex>
     </Flex>
   );

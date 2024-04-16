@@ -6,8 +6,7 @@
 
 import * as React from "react";
 import { LogoWithTextProps } from "./LogoWithText";
-import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
-import { MyIconProps } from "./MyIcon";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -22,14 +21,12 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type NavBarHeaderOverridesProps = {
     NavBarHeader?: PrimitiveOverrideProps<FlexProps>;
     LogoWithText?: LogoWithTextProps;
-    "Frame 32129767076"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 321"?: PrimitiveOverrideProps<FlexProps>;
     Dashboard?: PrimitiveOverrideProps<TextProps>;
-    Jobs?: PrimitiveOverrideProps<TextProps>;
-    Applicants?: PrimitiveOverrideProps<TextProps>;
-    Company?: PrimitiveOverrideProps<TextProps>;
-    "Frame 32129767081"?: PrimitiveOverrideProps<FlexProps>;
-    MyIcon?: MyIconProps;
-    image?: PrimitiveOverrideProps<ImageProps>;
+    "Frame 322"?: PrimitiveOverrideProps<FlexProps>;
+    Workouts?: PrimitiveOverrideProps<TextProps>;
+    "Frame 323"?: PrimitiveOverrideProps<FlexProps>;
+    Analytics?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type NavBarHeaderProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: NavBarHeaderOverridesProps | undefined | null;
